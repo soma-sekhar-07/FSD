@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Program Using Date Object Properties and Methods</title>
+</head>
+
+<body>
+
+<script>
+// Creating a Date object
+var today = new Date();
+
+// Date Object Methods
+document.write("Current Date and Time: " + today + "<br>");
+document.write("Current Year: " + today.getFullYear() + "<br>");
+document.write("Current Month: " + (today.getMonth() + 1) + "<br>"); // Months are 0-11
+document.write("Current Date: " + today.getDate() + "<br>");
+document.write("Current Day: " + today.getDay() + "<br>"); // 0=Sunday, 1=Monday...
+document.write("Current Hours: " + today.getHours() + "<br>");
+document.write("Current Minutes: " + today.getMinutes() + "<br>");
+
+// Date Object Property
+document.write("Time in Milliseconds since Jan 1, 1970: " + today.getTime());
+</script>
+
+</body>
+</html>
