@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Image Position</title>
+
+    <style>
+        body {
+            height: 2000px; /* for scrolling */
+
+            /* Background image */
+            background-image: url("image.jpg");
+            background-repeat: no-repeat;
+
+            /* Halfway down */
+            background-position: center 50%;
+
+            /* Fixed during scroll */
+            background-attachment: fixed;
+        }
+
+        /* Tilt effect using pseudo-element */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            height: 300px;
+            background: url("image.jpg") no-repeat center;
+            background-size: cover;
+
+            transform: translate(-50%, -50%) rotate(20deg);
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align:center;">Background Image Demo</h1>
+
+    <p style="text-align:center;">
+        Scroll the page to see that the image remains fixed.
+    </p>
+
+</body>
+</html>
