@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Selector: h2 */
+        h2 {
+            color: blue;              /* Property: color, Value: blue */
+            text-align: center;       /* Property: text-align, Value: center */
+        }
+
+        /* Selector: .box */
+        .box {
+            background-color: lightgray;  /* Property: background-color */
+            padding: 10px;                /* Property: padding */
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>CSS Types Demonstration</h1>
+
+    <!-- Inline CSS -->
+    <p style="color: red; font-size: 18px;">
+        This is Inline CSS example.
+    </p>
+
+    <!-- Internal CSS -->
+    <h2>This is Internal CSS Example</h2>
+
+    <!-- External CSS -->
+    <h3>This is External CSS Example</h3>
+
+    <!-- Class Selector -->
+    <div class="box">
+        <p>This div uses Internal CSS with class selector.</p>
+    </div>
+
+</body>
+</html>
