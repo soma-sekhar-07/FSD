@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Color Formats</title>
+
+    <style>
+
+        /* 1. Color Name */
+        .colorName {
+            color: red;
+        }
+
+        /* 2. Hexadecimal */
+        .hexColor {
+            color: #00FF00; /* Green */
+        }
+
+        /* 3. RGB */
+        .rgbColor {
+            color: rgb(0, 0, 255); /* Blue */
+        }
+
+        /* 4. RGBA (with transparency) */
+        .rgbaColor {
+            color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+        }
+
+        /* 5. HSL */
+        .hslColor {
+            color: hsl(120, 100%, 50%); /* Green */
+        }
+
+        /* 6. HSLA (with transparency) */
+        .hslaColor {
+            color: hsla(240, 100%, 50%, 0.5); /* Semi-transparent blue */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Different Ways to Use Colors in CSS</h1>
+
+    <p class="colorName">This uses Color Name (red)</p>
+
+    <p class="hexColor">This uses Hexadecimal (#00FF00)</p>
+
+    <p class="rgbColor">This uses RGB (0,0,255)</p>
+
+    <p class="rgbaColor">This uses RGBA (with transparency)</p>
+
+    <p class="hslColor">This uses HSL format</p>
+
+    <p class="hslaColor">This uses HSLA format (with transparency)</p>
+
+</body>
+</html>
