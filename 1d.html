@@ -1,59 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Image Gallery using Thumbnails</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        .gallery a img {
-            width: 100px;
-            height: 100px;
-            border: 2px solid #555;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .gallery a img:hover {
-            transform: scale(1.1);
-            border-color: blue;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Image Gallery</h1>
-    <p>Click on any image to view full size</p>
-
-    <div class="gallery">
-
-        <!-- Image 1 -->
-        <a href="images/image1.jpg" target="_blank">
-            <img src="images/image1.jpg" alt="Image 1">
-        </a>
-
-        <!-- Image 2 -->
-        <a href="images/image2.jpg" target="_blank">
-            <img src="images/image2.jpg" alt="Image 2">
-        </a>
-
-        <!-- Image 3 -->
-        <a href="images/image3.jpg" target="_blank">
-            <img src="images/image3.jpg" alt="Image 3">
-        </a>
-
-        <!-- Image 4 -->
-        <a href="images/image4.jpg" target="_blank">
-            <img src="images/image4.jpg" alt="Image 4">
-        </a>
-
-    </div>
-
-</body>
+    <head>
+        <title>thumbnail</title>
+    </head>
+    <body>
+        <h3>Image map</h3>
+        <p>
+            click library,dorm,science and admin to go to their respective pages
+        </p>
+        <img src="images/campus.png" alt="campus" usemap="#campus">
+        <map name="campus">
+            <area shape="rect" coords="40, 327,277, 459" href="admin.html" alt="admin">
+            <area shape="rect" coords="555, 357,818, 539" href="dorm.html" alt="dorm">
+            <area shape="rect" coords="20, 99,304, 157" href="library.html" alt="library">
+            <area shape="rect" coords="613, 103,879, 210" href="science.html" alt="science">
+        </map>
+    </body>
 </html>
