@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Program Using RegExp Object Properties and Methods</title>
+</head>
+
+<body>
+
+<script>
+// Creating a Regular Expression
+var pattern = /javascript/i; // 'i' for case-insensitive
+
+// Test string
+var text = "I love JavaScript programming";
+
+// RegExp Method - test()
+var resultTest = pattern.test(text); // returns true or false
+document.write("Test Result: " + resultTest + "<br>");
+
+// RegExp Method - exec()
+var resultExec = pattern.exec(text); // returns the matched string
+document.write("Exec Result: " + resultExec + "<br>");
+
+// RegExp Property - source
+document.write("Pattern Source: " + pattern.source + "<br>");
+
+// RegExp Property - flags
+document.write("Pattern Flags: " + pattern.flags + "<br>");
+</script>
+
+</body>
+</html>
