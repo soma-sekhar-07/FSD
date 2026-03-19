@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 0 auto;
+        font-size: 20px;
+      }
+      th {
+        width: 300px;
+        text-align: left;
+        padding: 10px;
+      }
+      td {
+        width: 300px;
+        padding: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="number"],
+      input[type="date"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <caption>
+          <b>registration form</b>
+        </caption>
+        <tr>
+          <th>Name</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>E-Mail</th>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>Ph.no</th>
+          <td><input type="number" maxlength="10" /></td>
+        </tr>
+        <tr>
+          <th>Date of birth</th>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <th>Intrested courses</th>
+          <td>
+            <input type="checkbox" id="op1" />
+            <label for="op1">AIML</label>
+            <input type="checkbox" id="op2" />
+            <label for="op2">block chain</label>
+            <input type="checkbox" id="op3" />
+            <label for="op3">IOT</label>
+          </td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            <input type="radio" id="gender1" name="gender" />
+            <label for="gender1">Male</label>
+            <input type="radio" id="gender2" name="gender" />
+            <label for="gender2">Female</label>
+            <input type="radio" id="gender3" name="gender" />
+            <label for="gender3">Others</label>
+          </td>
+        </tr>
+        <tr>
+          <th>present qualification</th>
+          <td>
+            <select name="btech" id="">
+              <option value="btech">1st year</option>
+              <option value="btech">2nd year</option>
+              <option value="btech">3rd year</option>
+              <option value="btech">4th year</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>About you</th>
+          <td>
+            <textarea name="" id="" rows="3" cols="" minlength="10"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" />
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
