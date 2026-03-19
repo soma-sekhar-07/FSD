@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Semantic Tags Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px 0;
+        }
+        article {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        aside {
+            background-color: #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        figure {
+            text-align: center;
+        }
+        img {
+            width: 200px;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Web Page</h1>
+        <p>Welcome to my website</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SECTION -->
+        <section>
+
+            <!-- ARTICLE -->
+            <article>
+                <h2>About HTML5</h2>
+                <p>
+                    HTML5 introduces semantic elements like 
+                    <span style="color:blue;">article</span>, 
+                    <span style="color:green;">section</span>, 
+                    and <span style="color:red;">nav</span> 
+                    to make web pages more meaningful.
+                </p>
+
+                <!-- FIGURE -->
+                <figure>
+                    <img src="images/sample.jpg" alt="Sample Image">
+                    <figcaption>Figure: Sample HTML Image</figcaption>
+                </figure>
+            </article>
+
+            <!-- ASIDE -->
+            <aside>
+                <h3>Note</h3>
+                <p>This is additional information related to the article.</p>
+            </aside>
+
+        </section>
+
+        <!-- DIV Example -->
+        <div style="background-color: lightyellow; padding:10px;">
+            <p>This is inside a <span style="font-weight:bold;">div</span> container.</p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
