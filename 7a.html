@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Object Demo</title>
+    <script>
+        function displayInfo() {
+            // Using document property
+            var url = document.URL;
+
+            // Using document method
+            document.getElementById("info").innerHTML =
+                "The URL of this page is: " + url;
+
+            // Change text color using document.body property
+            document.body.style.color = "green";
+        }
+    </script>
+</head>
+<body>
+
+<h2>Using Document Object</h2>
+
+<p id="info">Click the button to see the page URL.</p>
+
+<button onclick="displayInfo()">Show URL</button>
+
+</body>
+</html>
