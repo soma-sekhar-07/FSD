@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+
+    <style>
+
+        /* ========================= */
+        /* 1. SIMPLE SELECTORS */
+        /* ========================= */
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #mainHeading {
+            color: red;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+
+        /* ========================= */
+        /* 2. COMBINATOR SELECTORS */
+        /* ========================= */
+
+        /* Descendant Selector */
+        div p {
+            color: purple;
+        }
+
+        /* Child Selector */
+        div > span {
+            color: orange;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            background-color: lightgray;
+        }
+
+        /* General Sibling Selector */
+        h3 ~ p {
+            border: 1px solid black;
+        }
+
+
+        /* ========================= */
+        /* 3. PSEUDO-CLASS SELECTORS */
+        /* ========================= */
+
+        a:hover {
+            color: red;
+        }
+
+        li:first-child {
+            color: brown;
+        }
+
+
+        /* ========================= */
+        /* 4. PSEUDO-ELEMENT SELECTORS */
+        /* ========================= */
+
+        p::first-letter {
+            font-size: 24px;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+
+        /* ========================= */
+        /* 5. ATTRIBUTE SELECTORS */
+        /* ========================= */
+
+        input[type="text"] {
+            background-color: lightblue;
+        }
+
+        a[target="_blank"] {
+            color: pink;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainHeading">CSS Selectors Demonstration</h1>
+
+    <!-- Simple Selectors -->
+    <p>This is a paragraph (element selector).</p>
+    <p class="highlight">This uses class selector.</p>
+
+    <h2>Heading 2</h2>
+    <p>This paragraph shows adjacent sibling selector.</p>
+
+    <h3>Heading 3</h3>
+    <p>This paragraph shows general sibling selector.</p>
+
+    <!-- Combinator -->
+    <div>
+        <p>Descendant selector example</p>
+        <span>Child selector example</span>
+    </div>
+
+    <!-- Pseudo-class -->
+    <a href="#">Hover over me</a>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <!-- Attribute Selector -->
+    <input type="text" placeholder="Text input">
+    <br><br>
+    <a href="https://example.com" target="_blank">External Link</a>
+
+</body>
+</html>
