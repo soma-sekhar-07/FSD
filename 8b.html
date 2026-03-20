@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Weekday</title>
+</head>
+<body>
+    <h2>Find the Weekday from Day Number</h2>
+
+    <!-- Input for day number -->
+    <label for="dayNumber">Enter day number (1-7):</label>
+    <input type="number" id="dayNumber" min="1" max="7">
+    <button onclick="displayWeekday()">Show Weekday</button>
+
+    <!-- Result -->
+    <p id="result"></p>
+
+    <script>
+        function displayWeekday() {
+            let dayNumber = parseInt(document.getElementById("dayNumber").value);
+            let dayName;
+
+            switch(dayNumber) {
+                case 1: dayName = "Monday"; break;
+                case 2: dayName = "Tuesday"; break;
+                case 3: dayName = "Wednesday"; break;
+                case 4: dayName = "Thursday"; break;
+                case 5: dayName = "Friday"; break;
+                case 6: dayName = "Saturday"; break;
+                case 7: dayName = "Sunday"; break;
+                default: dayName = "Invalid day number! Please enter 1-7.";
+            }
+
+            document.getElementById("result").innerText = dayName;
+        }
+    </script>
+</body>
+</html>
